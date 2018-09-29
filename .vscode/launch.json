@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [{
+            "type": "node",
+            "request": "launch",
+            "name": "Launch via NPM",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run", "dev"
+            ],
+            "port": 9229,
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}/server",
+            "outFiles": ["${workspaceRoot}/server/dist"],
+            "protocol": "inspector",
+            "console": "integratedTerminal",
+            "timeout": 15000
+        },{
+            "type": "node",
+            "request": "launch",
+            "name": "Test via NPM",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run", "dev-test"
+            ],
+            "port": 9229,
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}/server",
+            "outFiles": ["${workspaceRoot}/server/dist"],
+            "protocol": "inspector",
+            "console": "integratedTerminal",
+            "timeout": 15000
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "protocol": "inspector",
+            "program": "${workspaceRoot}/server/src/server.ts",
+            "outFiles": ["${workspaceRoot}/server/dist"],
+            "cwd": "${workspaceRoot}/server",
+            "sourceMaps": true,
+        }
+    ]
+}

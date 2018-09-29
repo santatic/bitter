@@ -1,0 +1,130 @@
+LSK/BNB
+
+5 minutes
+100 warmup period
+
+sharpe ratio	0.34
+***********************************************************
+# constant multiplier. 0.015 gets to around 70% fit
+constant = 0.0163
+
+# history size, make same or smaller than history
+history = 90
+
+[thresholds]
+stopLoss = 2
+lossLock = 24
+up = 111
+down = -151
+persistence = 0
+
+***********************************************************
+sharpe ratio	0.69
+
+# constant multiplier. 0.015 gets to around 70% fit
+constant = 0.01628
+
+# history size, make same or smaller than history
+history = 90
+
+[thresholds]
+stopLoss = 2
+lossLock = 24
+up = 147
+down = -150
+persistence = 0
+###########################################################
+ADX/BNB
+
+5 minutes
+100 warmup period
+
+sharpe ratio	0.55
+***********************************************************
+# constant multiplier. 0.015 gets to around 70% fit
+constant = 0.03
+
+# history size, make same or smaller than history
+history = 90
+
+[thresholds]
+stopLoss = 2
+lossLock = 12
+up = 110
+down = -155
+persistence = 0
+**********************************************************
+sharpe ratio	0.35
+
+# constant multiplier. 0.015 gets to around 70% fit
+constant = 0.025
+
+# history size, make same or smaller than history
+history = 90
+
+[thresholds]
+stopLoss = 2
+lossLock = 12
+up = 50
+down = -170
+persistence = 0
+
+********************************************************
+15 minutes
+100 warmup
+
+sharpe ratio	0.41(1 month)
+
+# constant multiplier. 0.015 gets to around 70% fit
+constant = 0.015
+
+# history size, make same or smaller than history
+history = 99
+
+[thresholds]
+stopLoss = 2
+lossLock = 24
+up = 50
+down = -170
+persistence = 0
+
+############################################################
+VEN/BNB
+
+5 minutes
+100 warmup period
+
+sharpe ratio	0.25 (1 month)
+**********************************************************
+# constant multiplier. 0.015 gets to around 70% fit
+constant = 0.01628
+
+# history size, make same or smaller than history
+history = 90
+
+[thresholds]
+stopLoss = 2
+lossLock = 30
+up = 180
+down = -100
+persistence = 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pm2 start gekko.js --name BINANCE.LSK_BNB -x -- -c config_LSK_BNB.js
+pm2 start gekko.js --name BINANCE.ADX_BNB -x -- -c config_ADX_BNB.js
+pm2 start gekko.js --name BINANCE.VEN_BNB -x -- -c config_VEN_BNB.js

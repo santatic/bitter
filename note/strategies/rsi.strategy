@@ -1,0 +1,78 @@
+
+#################################
+ICX/BNB (1,000,000% / 4 months)
+
+2 minutes
+15 warmup
+***********************
+interval = 4.11
+
+[thresholds]
+low = 24.89
+high = 53
+persistence = 0
+
+#################################
+ELF/BTC (170%/ 1 month)
+
+2 minutes
+5 warmup
+
+*********************************
+interval = 21
+
+[thresholds]
+low = 25
+high = 72
+persistence = 0
+
+#################################
+ICX/BNB (735% / 1 month)
+
+5 minutes
+15 warmup
+*********************************
+interval = 4.5
+
+[thresholds]
+low = 24.89
+high = 80
+persistence = 0
+
+#################################
+ICX/BNB (1,000,000% / 1 month)
+
+2 minutes
+15 warmup
+*********************************
+interval = 4.11
+
+[thresholds]
+low = 24.89
+high = 53
+persistence = 1
+##################################
+ICX/BNB (65% / 20/01/2018 - 30/01/2018)
+
+2 minutes
+15 warmup
+*********************************
+interval = 4.11
+
+[thresholds]
+low = 24.89
+high = 73.9
+persistence = 1
+
+####################################
+ICX/BNB (35% - 10 day)
+
+5 minutes
+15 warmup
+***********************
+interval = 6
+
+[thresholds]
+low = 29
+high = 52
+persistence = 0

@@ -1,0 +1,8 @@
+# get history summary monthly, yearly
+https://www.etoro.com/sapi/userstats/gain/cid/7368036/history?IncludeSimulation=true&client_request_id=718f6e66-721b-46c7-a6fa-36d46e696488
+
+# monthly risk
+https://www.etoro.com/sapi/userstats/risk/username/jackie8513/history/monthly?client_request_id=30567fea-82fc-48a0-8a6b-8590417a3441
+
+# total trade summary
+https://www.etoro.com/sapi/userstats/stats/username/jackie8513/trades/oneYearAgo?CopyAsAsset=true&client_request_id=ee3ab974-5bc9-43d2-8b28-746f02bc5500

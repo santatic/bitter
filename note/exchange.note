@@ -1,0 +1,69 @@
+event.auth: auth event
+    {
+        status: "success/error",
+        error?: Error()
+    }
+##########################################
+event.order.market.<orderId>: listen for a special orderMarketId
+    {
+        status: "new/update/cancel/error",
+        data: UserOrder(),
+        error?: Error()
+    }
+
+event.order.<orderId>: listen for a special orderId
+    {
+        status: "new/update/cancel/error",
+        data: UserOrder(),
+        error?: Error()
+    }
+
+event.order: all order for external
+    {
+        status: "new/update/cancel/error"
+        data: UserOrder(),
+        error?: Error()
+    }
+
+#########################################
+event.market.ticker
+    {
+        status: "new/update/cancel/error",
+        data: Ticker
+        error?: Error()
+    }
+    - error: timeout
+    - error: permission
+
+event.market.order
+    {
+        status: "new/update/cancel/error",
+        data: Order()
+        error?: Error()
+    }
+
+event.market.trade
+    {
+        status: "new/update/cancel/error",
+        data: Trade
+        error?: Error()
+    }
+
+event.market.candle
+    {
+        status: "new/update/cancel/error",
+        data: Candle
+        error?: Error()
+    }
+
+#########################################
+
+1. wss message -> 
+2. eventMapper -> 
+3. event object -> 
+4. if is order event -> 
+    4.1 send to event.order.<orderId>.<action>
+    4.2 if(exception) -> stop event
+    4.3 send to global event.order.<action> for external listener
+
+5. if is market.ticker/market.order/market.trade/market.candle --> send to external

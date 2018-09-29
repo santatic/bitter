@@ -1,0 +1,33 @@
+1375.45906%
+#####################################################
+CCI
+3 minutes
+binance/YOYO
+#####################################################
+# constant multiplier. 0.015 gets to around 70% fit
+constant = 0.0153
+
+# history size, make same or smaller than history
+history = 91
+
+[thresholds]
+up = 100
+down = -100
+persistence = 0
+
+#####################################################
+ICX/BNB (1961%)
+1 minutes
+15 warmup
+
+********************************
+# constant multiplier. 0.015 gets to around 70% fit
+constant = 0.0153
+
+# history size, make same or smaller than history
+history = 90
+
+[thresholds]
+up = 100
+down = -100
+persistence = 1

@@ -1,0 +1,56 @@
+5 minutes
+30 warmups
+************************
+[rsi]
+optInTimePeriod = 6
+
+[thresholds]
+stopLoss = 2
+lossLock = 24
+low = 24
+high = 52
+persistence = 1
+#################################################
+
+15 minutes
+30 warmups
+************************
+[rsi]
+optInTimePeriod = 6
+
+[thresholds]
+stopLoss = 2
+lossLock = 24
+low = 24
+high = 52
+persistence = 1
+
+################################################
+5 minutes
+30 warmups
+
+***********************
+[rsi]
+optInTimePeriod = 6
+
+[thresholds]
+stopLoss = 3
+lossLock = 24
+low = 5
+high = 52
+persistence = 1
+
+
+################################################
+1 hour
+10 warmups
+*************************
+[rsi]
+optInTimePeriod = 4
+
+[thresholds]
+stopLoss = 2
+lossLock = 12
+low = 5
+high = 53
+persistence = 1
